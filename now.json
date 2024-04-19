@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "@hankliu/rc-fullpage",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "/dist/$1" }]
+}

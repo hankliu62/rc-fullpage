@@ -1,0 +1,74 @@
+{
+  "name": "@hankliu/rc-fullpage",
+  "version": "0.0.1",
+  "private": false,
+  "description": "React easy to use fullpage component",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-fullpage",
+    "fullpage"
+  ],
+  "homepage": "https://github.com/hankliu62/rc-fullpage",
+  "bugs": {
+    "url": "http://github.com/hankliu62/rc-fullpage/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/hankliu62/rc-fullpage.git"
+  },
+  "license": "MIT",
+  "main": "./lib/index",
+  "module": "./es/index",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "compile": "father build",
+    "coverage": "rc-test -u --coverage",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "lint": "eslint src/ --ext .ts,.tsx,.jsx,.js,.md",
+    "now-build": "npm run docs:build",
+    "prepublishOnlyNot": "npm run compile && np patch --yolo --no-publish --any-branch",
+    "prettier": "prettier --write \"./(src|test|docs)/**/*.{ts,tsx,js,jsx,json,md}\"",
+    "start": "dumi dev",
+    "test": "rc-test -u"
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.24.4",
+    "classnames": "^2.5.1",
+    "lodash.throttle": "^4.1.1",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.2",
+    "@types/classnames": "^2.3.0",
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.2.78",
+    "@types/react-dom": "^18.2.25",
+    "@umijs/fabric": "^4.0.1",
+    "babel-plugin-import": "^1.13.8",
+    "cross-env": "^7.0.3",
+    "dumi": "^2.2.17",
+    "eslint": "^7.1.0",
+    "father": "^4.4.0",
+    "glob": "^10.3.12",
+    "less": "^4.2.0",
+    "np": "^10.0.3",
+    "rc-test": "^7.0.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  }
+}
