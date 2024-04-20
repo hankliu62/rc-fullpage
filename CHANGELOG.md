@@ -24,6 +24,10 @@ timeline: true
 
 ---
 
+## 0.0.2
+
+- 🐞 修复 `verticalAlign` 参数，`Section` 元素显示不正常的问题。
+
 ## 0.0.1
 
 - 🆕 类似 fullpage.js 通用 React 的 Fullpage 组件。

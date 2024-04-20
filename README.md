@@ -155,10 +155,10 @@ export default function Base() {
 | prefixCls | string | hlui-fullpage | 组件外层元素 classname 前缀 |
 | delay | number | 1000 | 持续动画时间(ms) |
 | verticalAlign | boolean | true | 是否为垂直方向全屏滚动 |
-| scrollBar | boolean | false | 是否存在滚动条 |
+| scrollBar | boolean | false | 是否使用浏览器默认滚动条 |
 | dots | boolean | true | 是否显示面板指示点 |
 | sectionClassName | string | hlui-fullpage-section | 组件 Section 元素 classname |
-| anchors | string[] | - | 锚点名称列表 |
+| anchors | string[] | - | 对应 section 列表元素的锚点名称列表 |
 | activeClass | string | active | 当前正在显示的 Section 的 classname |
 | sectionPaddingTop | string \| number | 0 | Section 元素的上边距 |
 | sectionPaddingBottom | string \| number | 0 | Section 元素的下边距 |

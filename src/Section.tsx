@@ -66,7 +66,7 @@ const Section = ({ color, children, verticalAlign, className, id }: ISectionProp
       )}
       style={sectionStyle}
     >
-      {alignVertical ? renderVerticalAlign() : children}
+      {alignVertical ? children : renderVerticalAlign()}
     </div>
   );
 };
